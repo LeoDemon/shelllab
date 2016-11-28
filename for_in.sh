@@ -1,17 +1,17 @@
 ###############################
-#²âÊÔshell±à³ÌÖĞµÄfor_inÑ­»·    
+#æµ‹è¯•shellç¼–ç¨‹ä¸­çš„for_inå¾ªç¯    
 #add by leodemon
 #2013-02-05 16:13:55 
 
 #format like this:
-#for ÎŞ$±äÁ¿ in ×Ö·û´®
+#for æ— $å˜é‡ in å­—ç¬¦ä¸²
 #do
-#	$±äÁ¿
+#	$å˜é‡
 #done
 ###############################
 
 #!/bin/sh
-#step1:¶ÁÈ¡³ÌĞò±äÁ¿
+#step1:è¯»å–ç¨‹åºå˜é‡
 varnums="0 1 2 3  a b c"
 for i in $varnums
 do
@@ -19,7 +19,7 @@ do
 	echo "0"$i>./log/for_in_0$i.log
 done
 
-#step2:¶ÁÈ¡µ±Ç°Â·¾¶ÏÂµ½ÈÕÖ¾ÎÄ¼ş
+#step2:è¯»å–å½“å‰è·¯å¾„ä¸‹åˆ°æ—¥å¿—æ–‡ä»¶
 cd ./log
 #for j in *.log
 for j in $(ls *.log)
@@ -30,9 +30,8 @@ do
 done
 cd ..
 
-#step3:¶ÁÈ¡shellµÄÈë²Î£¬ÀıÈç£ºksh ./for_in.sh love china 2013
+#step3:è¯»å–shellçš„å…¥å‚ï¼Œä¾‹å¦‚ï¼šksh ./for_in.sh love china 2013
 for k in $*
 do
 	echo "k=="$k
 done
-
