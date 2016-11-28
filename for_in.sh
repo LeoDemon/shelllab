@@ -20,7 +20,7 @@ do
 done
 
 #step2:读取当前路径下到日志文件
-cd ./log/
+cd ./log
 #for j in *.log
 for j in $(ls *.log)
 do
